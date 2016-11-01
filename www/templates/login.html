@@ -1,0 +1,17 @@
+<ion-view view-title="login">
+   <ion-content>
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Usuario" ng-model="usuario"> 
+        </label>
+        <p ng-hide="hayUsuario">Indique un usuario</p>
+        <label class="item item-input">
+          <input type="password" placeholder="Clave" ng-model="clave">
+        </label>
+        <p ng-hide="hayClave">Indique una clave</p>
+        <button class="button button-full button-positive" ng-click="login()">
+        Login
+        </button>
+      </div>
+    </ion-content>
+</ion-view>

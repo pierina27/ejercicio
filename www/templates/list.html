@@ -1,0 +1,19 @@
+<ion-view view-title="Lista">
+  <ion-content class="padding">
+    
+    <br>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right item-icon-left" ng-repeat="i in list" type="item-text-wrap" ng-click="callNotify(i.title);">
+        <h2>{{i.title}}</h2>
+        <p>{{i.body}}</p>
+        <i class="icon icon-balanced ion-plus-circled" ng-click="add()"></i>
+        <i class="icon icon-assertive ion-minus-circled" ng-click="list.splice($index, 1)"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <ion-footer-bar align-title="center" class="bar-positive">
+    <a href="#/lista_expandible" class="button button-positive">
+      Lista desplegable
+    </a>
+  </ion-footer-bar>
+</ion-view>
